@@ -1,0 +1,74 @@
+body {
+	margin: 0;
+	padding:0;
+	background-image: url("./photos/pp.jpg");
+	
+	color: white;
+	font-family: Atkinson Hyperlegible, sans-serif;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+html body {
+	max-width: 100%;
+	overflow-x: hidden;     
+	/*background-image: url(./photos/bookbackgorundphoto.jpg);*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.left_div {
+	height: 100%;
+	width: 18%;
+	background-color: black;
+	position: relative;
+	display: flex;    
+	justify-content: space-between;
+    align-items: center;
+	background: black;
+	    flex-direction: column;
+}
+
+.rounded_pp_img {
+	margin-top: 20px;
+	border-radius: 100vh;
+	height: 150px;
+}
+
+.top_text {
+	color: white;
+	font-size: 20px;
+}
+
+.main_div {
+	height: 100vh;
+	display: flex;
+    align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.right_div {
+	width: 82%;
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+}
+
+.copy_write {
+	display: flex;
+	text-align: center;
+	margin: 5px;
+	flex-direction: column;
+}
+
+.copy_write_text {
+	margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.second_copy_write_text {
+	margin-block-end: 1em;
+}
