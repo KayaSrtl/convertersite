@@ -3,8 +3,8 @@
 Copyright 2023 Rockie Inc. All Rights Reserved.  -->
 <html  lang="tr" dir="ltr" data-cast-api-enabled="true">
 <head>
-<title>Kaya Sertel'in Portfolyosu</title>
-<link rel="icon" href="./files/photos/main_logo.png" type="image/gif" sizes="16x16">
+<title>Converter Site</title>
+<link rel="icon" href="./files/photos/converter_logo.png" type="image/gif" sizes="16x16">
 <meta charset="UTF-8">
 <meta name="author" content="Kaya Sertel">
 <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=0, minimum-scale=1">
@@ -15,11 +15,11 @@ Copyright 2023 Rockie Inc. All Rights Reserved.  -->
 <meta name="url" content="https://kayasrtl.github.io/convertersite/">
 <link rel="canonical" href="https://kayasrtl.github.io/convertersite/">
 <meta name="robots" content="index, follow">
-<meta property="og:image" content="https://kayasrtl.github.io/convertersite/files/photos/main_logo.png">
+<meta property="og:image" content="https://kayasrtl.github.io/convertersite/files/photos/converter_logo.jpg">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="500">
 <meta property="og:image:height" content="500">
-<meta name="msapplication-TileImage" content="https://engelsizsite.github.io/convertersite/files/photos/main_logo.png">
+<meta name="msapplication-TileImage" content="https://kayasrtl.github.io/convertersite/files/photos/converter_logo.jpg">
 <link rel="icon" href="./files/photos/main_logo.png" type="image/gif" sizes="16x16">
 <noscript>
 <style>
@@ -102,27 +102,40 @@ Copyright 2023 Rockie Inc. All Rights Reserved.  -->
 
 <div class="main_div">
 
-	<div class="left_div">
-		<div><img src="./files/photos/pp.jpg" alt="profile photo" class="rounded_pp_img"/></div>
-		<p class="top_text">Kaya Sertelin Portfolyosu</p>
-		<div class="copy_write" aria-labelledby="Copy write alanı">
-				
-			<h3 class="copy_write_text first_copy_write_text" aria-labelledby="Copy write yazısı"><span style="font-weight: lighter;">© Copyright</span> <span style="font-weight: bold;">Kaya Sertel</span></h3>
-			<p class="copy_write_text second_copy_write_text" aria-labelledby="Copy write yazısı">Tüm hakları saklıdır.</p>
+	  <div class="main_div">
+
+		<div class="top_div">
+			<button>button1</button>
+
+			<p class="top_text">you can convert any type to any type photo file format for free</p>
+			<button>button2</button>
 		</div>
-	</div>
-
-	<div class="right_div">
-		<h1 class="search_name_header" id="search_name_header">KONU BAŞLIKLARI</h1>
-
-		<p>Arduino ve STM32 Projeleri</p>
-		<a href="https://genkutup.org/" target="_blank">www.genkutup.org</a>
-		<a href="https://kayasrtl.github.io/laquillas/" target="_blank">www.laquillas.com</a>
-		<p>Teknofest</p>
-		<p>C Programlama</p>
-
-
-
+		
+		
+		<div class="main_part">
+			<div class="main_part_outer">
+				<div class="main_part_inner">
+					<form enctype="multipart/form-data">
+							<input id="upload" type="file" name="files[]">
+						</form>
+					<div class="drag_drop_zone" id="drop_zone">Sürükle bırak alanı</div>
+					<!--<textarea class="form-control" rows=35 cols=120 id="xlx_json"></textarea>-->
+					<select name="extensions" id="extensionselect">
+						<option value="jpg">.jpg</option>
+						<option value="png">.png</option>
+						<option value="webp">.webp</option>
+						<option value="jpeg">.jpeg</option>
+  					</select>
+					<button onclick="downloadFile()">Dosyayı Dönüştür ve İndir</button>
+					<h1 class="info_text">asd</h1>
+				</div>
+			</div>
+			
+		</div>
+	
+		<div class="copy_write">
+			<h3>Tüm hakları saklıdır.</h3>
+		</div>
 	</div>
 
 
