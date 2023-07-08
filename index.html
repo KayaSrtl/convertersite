@@ -20,7 +20,7 @@ Copyright 2023 Rockie Inc. All Rights Reserved.  -->
 <meta property="og:image:width" content="500">
 <meta property="og:image:height" content="500">
 <meta name="msapplication-TileImage" content="https://kayasrtl.github.io/convertersite/files/photos/converter_logo.jpg">
-<link rel="icon" href="./files/photos/main_logo.png" type="image/gif" sizes="16x16">
+<link rel="icon" href="./files/photos/converter_logo.png" type="image/gif" sizes="16x16">
 <noscript>
 <style>
 .main_noscript_div {
@@ -91,8 +91,9 @@ Copyright 2023 Rockie Inc. All Rights Reserved.  -->
 <script>
 
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-load-image/5.14.0/load-image.all.min.js"></script>
 <script src="./files/indexScript.js"></script>
-
+	<script src="https://unpkg.com/browser-image-compression@1.0.16/dist/browser-image-compression.js"></script>
 <link rel="stylesheet" href="./files/indexStyle.css">
 
 
@@ -116,17 +117,19 @@ Copyright 2023 Rockie Inc. All Rights Reserved.  -->
 			<div class="main_part_outer">
 				<div class="main_part_inner">
 					<form enctype="multipart/form-data">
-							<input id="upload" type="file" name="files[]">
+							<input type="file" id="myFile">
 						</form>
 					<div class="drag_drop_zone" id="drop_zone">Sürükle bırak alanı</div>
 					<!--<textarea class="form-control" rows=35 cols=120 id="xlx_json"></textarea>-->
+					 <input type="range" id="quality" min="0" max="100" value="92">
+    <label for="quality">Quality: <span id="qualityValue">92</span>%</label>
 					<select name="extensions" id="extensionselect">
 						<option value="jpg">.jpg</option>
 						<option value="png">.png</option>
 						<option value="webp">.webp</option>
 						<option value="jpeg">.jpeg</option>
   					</select>
-					<button onclick="downloadFile()">Dosyayı Dönüştür ve İndir</button>
+					<button onclick="convertAndDownload()">Dosyayı Dönüştür ve İndir</button>
 					<h1 class="info_text">asd</h1>
 				</div>
 			</div>
