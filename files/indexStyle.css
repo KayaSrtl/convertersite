@@ -11,6 +11,7 @@ body {
 html body {
 	max-width: 100%;
 	overflow-x: hidden;    
+	background: #8FA42E;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -118,3 +119,4 @@ html body {
 @media (max-width:1000px) { 
 
 }
+
